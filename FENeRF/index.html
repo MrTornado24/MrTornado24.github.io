@@ -24,7 +24,7 @@
                 <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Yong Zhang</a><sup>2</sup>, 
                 <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Xiaoyu Li</a><sup>1</sup>,
                 <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Qi Zhang</a><sup>2</sup>,
-                <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Yebin Liu</a><sup>2</sup>, 
+                <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Yebin Liu</a><sup>3</sup>, 
                 <a href="https://mrtornado24.github.io/FENeRF/" target="_blank">Jue Wang</a><sup>2</sup></h6>
             <p><sup>1</sup>University of Illinois at Urbana-Champaign &nbsp;&nbsp; 
                 <sup>2</sup>Tencent AI Lab &nbsp;&nbsp;
@@ -52,12 +52,15 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+            <!-- <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
                   <source src="images/video-teaser_c.mp4" type="video/mp4">
-              </video>
+            </video> -->
+            <div class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
+              <img src="images/teaser_v11.png" width=60% class="img-fluid" alt="Responsive image">
+            </div>
               <!-- <br><br> -->
           <p class="text-justify">  </p>
-          <p class="text-justify"> Neural Radiance Fields (NeRF) has recently gained popularity for its impressive novel view synthesis ability. This paper studies the problem of hallucinated NeRF: i.e. recovering a realistic NeRF at a different time of day from a group of tourism images. Existing solutions adopt NeRF with a controllable appearance embedding to render novel views under various conditions, but cannot render view-consistent images with an unseen appearance. To solve this problem, we present an end-to-end framework for constructing a hallucinated NeRF, dubbed as Ha-NeRF. Specifically, we propose an appearance hallucination module to handle time-varying appearances and transfer them to novel views. Considering the complex occlusions of tourism images, an anti-occlusion module is introduced to decompose the static subjects for visibility accurately. Experimental results on synthetic data and real tourism photo collections demonstrate that our method can not only hallucinate the desired appearances, but also render occlusion-free images from different views. </p>
+          <p class="text-justify"> Previous portrait image generation methods roughly fall into two categories: 2D GANs and 3D-aware GANs. 2D GANs can generate high fidelity portraits but with low view consistency. 3D-aware GAN methods can maintain view consistency but their generated images are not locally editable. To overcome these limitations, we propose FENeRF, a 3D-aware generator that can produce view-consistent and locally-editable portrait images. Our method uses two decoupled latent codes to generate corresponding facial semantics and texture in a spatial aligned 3D volume with shared geometry. Benefiting from such underlying 3D representation, FENeRF can jointly render the boundary-aligned image and semantic mask and use the semantic mask to edit the 3D volume via GAN inversion. We further show such 3D representation can be learned from widely available monocular image and semantic mask pairs. Moreover, we reveal that joint learning semantics and texture helps to generate finer geometry. Our experiments demonstrate that FENeRF outperforms state-of-the-art methods in various face editing tasks. </p>
         </div>
       </div>
     </div>

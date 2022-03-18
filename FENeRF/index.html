@@ -111,12 +111,12 @@ with adversarial objectives L<sub>D<sub>s</sub><sub> andL<sub>D<sub>c</sub><sub>
   
 
   
-  <!-- Disentangled Morphing and Style Mixing -->
+  <!-- Disentangled Interpolation and Style Mixing -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Disentangled Morphing and Style Mixing</h3>
+          <h3>Disentangled Interpolation and Style Mixing</h3>
             <hr style="margin-top:0px">
             <div class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
               <img src="images/morphing.png" width=100% class="img-fluid" alt="Responsive image">
@@ -125,7 +125,7 @@ with adversarial objectives L<sub>D<sub>s</sub><sub> andL<sub>D<sub>c</sub><sub>
 <!--           <p class="text-justify"> hhhhh </p> -->
           
           <div class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
-              <img src="images/style_mixing.png" width=100% class="img-fluid" alt="Responsive image">
+              <img src="images/style_mixing_trans_v2.png" width=100% class="img-fluid" alt="Responsive image">
             </div>
           <p class="text-justify">  </p>
 <!--           <p class="text-justify"> hhhhh </p> -->
@@ -135,24 +135,39 @@ with adversarial objectives L<sub>D<sub>s</sub><sub> andL<sub>D<sub>c</sub><sub>
     </div>
   </section>
   <br>
-
-  <!-- Cross-Appearance Hallucination -->
+  
+  <!-- Free-View Local Facial Editing -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-            <h3>Cross-Appearance Hallucination</h3>
+          <h3>Disentangled Interpolation and Style Mixing</h3>
+            <hr style="margin-top:0px">
+            <div class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
+              <img src="images/local_editing_v2.png" width=100% class="img-fluid" alt="Responsive image">
+            </div>
+          <p class="text-justify">  </p>
+<!--           <p class="text-justify"> hhhhh </p> -->
+         
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  <!-- Demo Video -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Demo Video</h3>
             <hr style="margin-top:0px">
             <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">From Trevi Fountain to Brandenburg Gate</h4>
             <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="images/Fountain2Gate_c.mp4" type="video/mp4">
+                <source src="images/demo.mp4" type="video/mp4">
             </video>
-
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">From Brandenburg Gate to Trevi Fountain</h4>
-            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                <source src="images/Gate2Fountain_c.mp4" type="video/mp4">
-            </video>
-            </video>
+<!--             </video> -->
         </div>
       </div>
     </div>
@@ -166,13 +181,12 @@ with adversarial objectives L<sub>D<sub>s</sub><sub> andL<sub>D<sub>c</sub><sub>
           <h3>Citation</h3>
           <hr style="margin-top:0px">
               <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-<code>@misc{chen2021hallucinated,
-      title={Hallucinated Neural Radiance Fields in the Wild}, 
-      author={Xingyu Chen and Qi Zhang and Xiaoyu Li and Yue Chen and Feng Ying and Xuan Wang and Jue Wang},
-      year={2021},
-      eprint={2111.15246},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+<code>@article{sun2021fenerf,
+  title={FENeRF: Face Editing in Neural Radiance Fields},
+  author={Sun, Jingxiang and Wang, Xuan and Zhang, Yong and Li, Xiaoyu and Zhang, Qi and Liu, Yebin and Wang, Jue},
+  journal={arXiv preprint arXiv:2111.15490},
+  year={2021}
+}
 }</code></pre>
           <hr>
       </div>

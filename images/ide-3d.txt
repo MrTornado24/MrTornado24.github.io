@@ -1,0 +1,6 @@
+@article{sun2022ide,
+  title={IDE-3D: Interactive Disentangled Editing for High-Resolution 3D-aware Portrait Synthesis},
+  author={Sun, Jingxiang and Wang, Xuan and Shi, Yichun and Wang, Lizhen and Wang, Jue and Liu, Yebin},
+  journal={arXiv preprint arXiv:2205.15517},
+  year={2022}
+}

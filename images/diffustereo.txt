@@ -1,0 +1,6 @@
+@inproceedings{shao2022diffusionstereo,
+  title={DiffuStereo: High Quality Human Reconstruction via Diffusion-based Stereo Using Sparse Cameras},
+  author={Shao, Ruizhi and Zheng, Zerong and Zhang, Hongwen and Sun, Jingxiang and Liu, Yebin},
+  booktitle={European Conference on Computer Vision},
+  year={2022}
+}

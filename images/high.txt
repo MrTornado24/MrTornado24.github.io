@@ -1,0 +1,6 @@
+@article{bai2022high,
+  title={High-fidelity Facial Avatar Reconstruction from Monocular Video with Generative Priors},
+  author={Bai, Yunpeng and Fan, Yanbo and Wang, Xuan and Zhang, Yong and Sun, Jingxiang and Yuan, Chun and Shan, Ying},
+  journal={arXiv preprint arXiv:2211.15064},
+  year={2022}
+}

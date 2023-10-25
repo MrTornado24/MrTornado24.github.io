@@ -1,0 +1,7 @@
+@inproceedings{wang2023styleavatar,
+  title={StyleAvatar: Real-time Photo-realistic Portrait Avatar from a Single Video},
+  author={Wang, Lizhen and Zhao, Xiaochen and Sun, Jingxiang and Zhang, Yuxiang and Zhang, Hongwen and Yu, Tao and Liu, Yebin},
+  booktitle={ACM SIGGRAPH 2023 Conference Proceedings},
+  pages={},
+  year={2023}
+}

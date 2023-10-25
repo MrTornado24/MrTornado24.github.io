@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior</title>
+	<link rel="icon" type="image/x-icon" href="../assets/css/images/favicon.ico">
+    <meta content="DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior" name="description" />
+    <meta content="summary" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="static/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/my_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Changa One:400,400italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500"]
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        ! function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <script type="text/javascript" src="static/js/zoom.js"></script>
+    <script type="text/javascript" src="static/js/video_comparison.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLDP9MKGC8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLDP9MKGC8');
+    </script>
+</head>
+
+<body>
+    <div class="section hero nerf-_v2">
+        <div class="container-2 nerf_header_v2 w-container">
+            <h1 class="nerf_title_v2">DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior</h1>
+            <div class="nerf_subheader_v2">Arxiv 2023</div>
+            <div class="nerf_subheader_v2">
+                <div>
+                    <a href="https://mrtornado24.github.io/" target="_blank" class="nerf_authors_v2">Jingxiang Sun<span
+                            class="text-span_nerf"></span></a><sup> 1</sup>,&nbsp;&nbsp;
+                    <a href="https://bo-zhang.me/" target="_blank" class="nerf_authors_v2">Bo Zhang<span
+                            class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
+                    <a href="https://dsaurus.github.io/saurus/" target="_blank" class="nerf_authors_v2">Ruizhi Shao<span
+                            class="text-span_nerf"></span></a><sup> 1</sup>,&nbsp;&nbsp;
+                    <a href="https://lizhenwangt.github.io/" target="_blank" class="nerf_authors_v2">Lizhen Wang<span
+                        class="text-span_nerf"></span></a><sup> 1</sup>,&nbsp;&nbsp;
+                    <a href="https://github.com/StevenLiuWen" target="_blank" class="nerf_authors_v2">Wen Liu<span
+                        class="text-span_nerf"></span></a><sup> 2</sup>,&nbsp;&nbsp;
+                    <a href="https://zdaxie.github.io/" target="_blank" class="nerf_authors_v2">Zhenda Xie<span
+                        class="text-span_nerf"></span></a><sup> 2</sup>,&nbsp;&nbsp;
+                    <a href="https://liuyebin.com/" target="_blank" class="nerf_authors_v2">Yebin Liu<span
+                            class="text-span_nerf"></span></a><sup> 1</sup>
+                </div>
+                <div>
+                    <h1 class="nerf_affiliation_v2"><sup>1 </sup>Tsinghua University</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>2 </sup>DeepSeek AI</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>3 </sup>Independent Researcher</h1>
+                </div>
+
+                <div class="external-link">
+                    <a class="btn" href="http://arxiv.org/abs/xxx" role="button" target="_blank">
+                        <i class="ai ai-arxiv"></i> Arxiv </a>
+                    <a class="btn" href="paper/Paper_high_res.pdf" role="button" target="_blank">
+                        <i class="fa fa-file-pdf"></i> Paper </a>
+                    <a class="btn" href="https://github.com/deepseek-ai/DreamCraft3D" role="button" target="_blank" disabled>
+                        <i class="fa-brands fa-github"></i> Code </a>
+                    <a class="btn btn-large btn-light" href="https://youtu.be/0FazXENkQms" role="button" target="_blank" disabled>
+                        <i class="fa-brands fa-youtube"></i> Video </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div data-anchor="slide1" class="section nerf_section">
+        <div class="w-container grey_container">
+            <h2 class="grey-heading_nerf">Abstract</h2>
+            <p class="paragraph-3 nerf_text nerf_results_text">
+                We present DreamCraft3D, a hierarchical 3D content generation method that produces high-fidelity and coherent 3D objects. We tackle the problem by leveraging
+                a 2D reference image to guide the stages of geometry sculpting and texture boosting. A central focus of this work is to address the consistency issue that existing
+                works encounter. To sculpt geometries that render coherently, we perform score
+                distillation sampling via a view-dependent diffusion model. This 3D prior, alongside several training strategies, prioritizes the geometry consistency but compromises the texture fidelity. 
+                We further propose <b style="color: rgb(124, 196, 245);">Bootstrapped Score Distillation (BSD)</b> to
+                specifically boost the texture. We train a personalized diffusion model, Dreambooth, on the augmented renderings of the scene, imbuing it with 3D knowledge
+                of the scene being optimized. The score distillation from this 3D-aware diffusion prior provides view-consistent guidance for the scene. Notably, through an
+                alternating optimization of the diffusion prior and 3D scene representation, we
+                achieve mutually reinforcing improvements: the optimized 3D scene aids in training the scene-specific diffusion model, which offers increasingly view-consistent
+                guidance for 3D optimization. The optimization is thus bootstrapped and leads
+                to substantial texture boosting. With tailored 3D priors throughout the hierarchical generation, DreamCraft3D generates coherent 3D objects with photorealistic
+                renderings, advancing the state-of-the-art in 3D content generation.
+                <br>
+                <!-- <img  src="assets/images/overview.png"> -->
+            </p>
+        </div>
+    </div>
+
+
+    <div class="white_section_nerf  w-container">
+        <h2 class="grey-heading_nerf">Generated Textured Meshes</h2>
+        <div class="grid-container-1">
+            <div>
+                <p class="myprompt nerf_text">A blue jay standing on a large basket of rainbow macarons <br>&nbsp</p>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/videos/jay.mp4"></video>
+            </div>
+            <div>
+                <p class="myprompt nerf_text">3D CGI Pixar Lionel Messi artfully kicking paint-filled bottles<br>&nbsp</p>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/videos/messi.mp4"></video>
+            </div>
+            <div>
+                <p class="myprompt nerf_text">Super Saiyan Goku unleashes a massive energy wave while standing on top <br>&nbsp</p>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/videos/saiyan_01.mp4"></video>
+            </div>
+            <div>
+                <p class="myprompt nerf_text">a DSLR photo of a corgi wearing a beret and holding a baguette, standing
+                    up on two hind legs                     <br>&nbsp</p>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/videos/corgi.mp4"></video>
+            </div>
+        </div>
+        <div class="grid-container-1">
+            <a class="mybtn" href="dmtet-based-gallery_0.html" role="button">
+             More Results </a>
+        </div>
+    </div>
+
+    
+
+    <div class="white_section_nerf  w-container">
+        <h2 class="grey-heading_nerf">Method Overview</h2>
+        <div class="grid-container-1">
+            <img src="assets_dreamcraft3d/images/diagram-1.png">
+
+            <p>DreamCraft3D leverages a 2D image generated from the text prompt and uses it to guide
+                the stages of geometry sculpting and texture boosting. When sculpting the geometry, the view-
+                conditioned diffusion model provides crucial 3D guidance to ensure geometric consistency. We
+                then dedicately improve the texture quality by conducting a cyclic optimization. We augment the
+                multi-view renderings and use them to finetune a diffusion model, DreamBooth, to offer multi-view
+                consistent gradients to optimize the scene. We term the loss that distills from an evolving diffusion
+                prior as bootstrapped distillation sampling.
+            </p>
+        </div>
+    </div>
+
+<div class="white_section_nerf grey_container w-container">
+<h2 class="grey-heading_nerf">BibTeX</h2>
+<div class="bibtex">
+    <pre><code>@article{dreamcraft3d,
+author    = {Jingxiang Sun and and Bo Zhang and Ruizhi Shao and Wen Liu and Zhenda Xie and Yebin Liu},
+title     = {DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior},
+journal   = {arxiv:xxx},
+year      = {2023},
+}</code></pre>
+</div>
+</div>
+
+</body>
+<footer>
+    This project page is inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+</footer>
+
+</html>

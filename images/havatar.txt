@@ -1,0 +1,14 @@
+@article{zhao2023havatar,
+author = {Zhao, Xiaochen and Wang, Lizhen and Sun, Jingxiang and Zhang, Hongwen and Suo, Jinli and Liu, Yebin},
+title = {HAvatar: High-Fidelity Head Avatar via Facial Model Conditioned Neural Radiance Field},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3626316},
+doi = {10.1145/3626316},
+note = {Just Accepted},
+journal = {ACM Trans. Graph.},
+month = {oct},
+keywords = {parametric facial model, image-to-image translation, image synthesis, head avatar, neural radiance field}
+}

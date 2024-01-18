@@ -1,0 +1,6 @@
+@article{hu2023vectortalker,
+  title={VectorTalker: SVG Talking Face Generation with Progressive Vectorisation},
+  author={Hu, Hao and Wang, Xuan and Sun, Jingxiang and Fan, Yanbo and Guo, Yu and Jiang, Caigui},
+  journal={arXiv preprint arXiv:2312.11568},
+  year={2023}
+}

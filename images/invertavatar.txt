@@ -1,0 +1,6 @@
+@article{zhao2023invertavatar,
+  title={InvertAvatar: Incremental GAN Inversion for Generalized Head Avatars},
+  author={Zhao, Xiaochen and Sun, Jingxiang and Wang, Lizhen and Liu, Yebin},
+  journal={arXiv preprint arXiv:2312.02222},
+  year={2023}
+}

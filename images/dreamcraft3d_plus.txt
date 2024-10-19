@@ -1,0 +1,6 @@
+@article{sun2024dreamcraft3d++,
+  title={DreamCraft3D++: Efficient Hierarchical 3D Generation with Multi-Plane Reconstruction Model}, 
+  author={Sun, Jingxiang and Peng, Cheng and Shao, Ruizhi and Guo, Yuan-Chen and Zhao, Xiaochen and Li, Yangguang and Cao, Yanpei and Zhang, Bo and Liu, Yebin},
+  journal={arXiv preprint arXiv:2410.12928},
+  year={2024},
+}

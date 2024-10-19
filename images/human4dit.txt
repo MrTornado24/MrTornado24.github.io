@@ -1,0 +1,6 @@
+@article{shao2024human4dit,
+  title={Human4DiT: Free-view Human Video Generation with 4D Diffusion Transformer},
+  author={Shao, Ruizhi and Pang, Youxin and Zheng, Zerong and Sun, Jingxiang and Liu, Yebin},
+  journal={arXiv preprint arXiv:2405.17405},
+  year={2024}
+}

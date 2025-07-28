@@ -1,0 +1,7 @@
+@inproceedings{yu25gaia,
+  title         = {{GAIA}: Generative Animatable Interactive Avatars with Expression-conditioned Gaussians},
+  author        = {Zhengming Yu and Tianye Li and Jingxiang Sun and Omer Shapira and Seonwook Park and Michael Stengel and Matthew Chan and Xin Li and Wenping Wang and Koki Nagano and Shalini De Mello},
+  booktitle     = {SIGGRAPH (Conference Track)},
+  month         = {August},
+  year          = {2025},
+}

@@ -1,0 +1,6 @@
+@article{peng2025parametric,
+  title={Parametric Gaussian Human Model: Generalizable Prior for Efficient and Realistic Human Avatar Modeling},
+  author={Peng, Cheng and Sun, Jingxiang and Chen, Yushuo and Su, Zhaoqi and Su, Zhuo and Liu, Yebin},
+  journal={arXiv preprint arXiv:2506.06645},
+  year={2025}
+}

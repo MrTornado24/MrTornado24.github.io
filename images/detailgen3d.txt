@@ -1,0 +1,6 @@
+@article{deng2024detailgen3d,
+  title={DetailGen3D: Generative 3D Geometry Enhancement via Data-Dependent Flow},
+  author={Deng, Ken and Guo, Yuan-Chen and Sun, Jingxiang and Zou, Zi-Xin and Li, Yangguang and Cai, Xin and Cao, Yan-Pei and Liu, Yebin and Liang, Ding},
+  journal={arXiv preprint arXiv:2411.16820},
+  year={2024}
+}

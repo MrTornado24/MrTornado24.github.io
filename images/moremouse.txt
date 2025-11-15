@@ -1,0 +1,6 @@
+@article{zhong2025moremouse,
+  title={Moremouse: Monocular reconstruction of laboratory mouse},
+  author={Zhong, Yuan and Sun, Jingxiang and An, Liang and Liu, Yebin},
+  journal={arXiv preprint arXiv:2507.04258},
+  year={2025}
+}

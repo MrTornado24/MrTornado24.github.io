@@ -1,0 +1,6 @@
+@inproceedings{peng2026flexavatar,
+  title         = {{FlexAvatar}: Flexible Large Reconstruction Model for Animatable Gaussian Head Avatars with Detailed Deformation},
+  author        = {Cheng Peng and Zhuo Su and Liao Wang and Chen Guo and Zhaohu Li and Chengjiang Long and Zheng Lv and Jingxiang Sun and Chenyangguang Zhang and Yebin Liu},
+  booktitle     = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year          = {2026},
+}

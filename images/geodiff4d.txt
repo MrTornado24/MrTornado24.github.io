@@ -1,0 +1,6 @@
+@inproceedings{xu2026geodiff4d,
+  title         = {{GeoDiff4D}: Geometry-Aware Diffusion for Photorealistic 4D Head Avatars from a Single Portrait},
+  author        = {Chao Xu and Xiaochen Zhao and Xiang Deng and Jingxiang Sun and Donglin Di and Zhuo Su and Yebin Liu},
+  booktitle     = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year          = {2026},
+}
